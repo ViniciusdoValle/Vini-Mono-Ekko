@@ -1,0 +1,17 @@
+/* Estilos padrão para desktops */
+body {
+    font-size: 16px;
+}
+
+/* Ajustes para telas menores, como celulares */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Exemplo de ajustar a largura de um elemento */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
