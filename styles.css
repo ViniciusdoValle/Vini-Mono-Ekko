@@ -1,0 +1,39 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho e rodapé */
+.header, .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contêiner principal usando Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha para ajustar ao espaço */
+    gap: 10px;       /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+/* Estilo dos itens */
+.item {
+    background-color: #4CAF50;
+    color: white;
+    flex: 1 1 200px; /* Cresce e diminui automaticamente, com largura mínima de 200px */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+    }
+}
