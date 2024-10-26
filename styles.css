@@ -1,0 +1,26 @@
+/* Estilos padrão para desktops */
+body {
+    font-size: 16px;
+}
+
+/* Ajustes para telas menores, como celulares */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px; /* Adiciona margem nas laterais */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2, p {
+        font-size: 90%; /* Ajusta o tamanho da fonte */
+    }
+
+    img {
+        max-width: 100%; /* Garante que imagens não ultrapassem a largura da tela */
+        height: auto;
+    }
+}
